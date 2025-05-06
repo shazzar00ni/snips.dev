@@ -1,0 +1,63 @@
+# Snips.dev Project Structure
+
+```
+snips-dev/
+├── client/                  # Frontend React application
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   └── manifest.json
+│   ├── src/
+│   │   ├── assets/         # Images, icons, etc.
+│   │   ├── components/     # Reusable UI components
+│   │   │   ├── common/     # Buttons, inputs, etc.
+│   │   │   ├── layout/     # Layout components
+│   │   │   └── snippets/   # Snippet-related components
+│   │   ├── contexts/       # React contexts
+│   │   ├── hooks/          # Custom hooks
+│   │   ├── pages/          # Page components
+│   │   ├── services/       # API service calls
+│   │   ├── styles/         # Global styles
+│   │   ├── types/          # TypeScript types
+│   │   ├── utils/          # Utility functions
+│   │   ├── App.tsx         # Main App component
+│   │   └── index.tsx       # Entry point
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── server/                  # Backend Node.js application
+│   ├── src/
+│   │   ├── config/         # Configuration files
+│   │   ├── controllers/    # Route controllers
+│   │   ├── middleware/     # Express middleware
+│   │   ├── models/         # MongoDB models
+│   │   ├── routes/         # API routes
+│   │   ├── services/       # Business logic
+│   │   ├── types/          # TypeScript types
+│   │   ├── utils/          # Utility functions
+│   │   └── app.ts          # Express app setup
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── extension/               # Browser extension
+│   ├── src/
+│   │   ├── background/     # Background scripts
+│   │   ├── content/        # Content scripts
+│   │   ├── popup/          # Extension popup UI
+│   │   └── utils/          # Utility functions
+│   ├── manifest.json
+│   └── package.json
+│
+├── shared/                  # Shared code between projects
+│   ├── src/
+│   │   ├── constants/      # Shared constants
+│   │   ├── types/          # Shared TypeScript types
+│   │   └── utils/          # Shared utility functions
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── docker-compose.yml       # Docker setup for development
+├── .gitignore
+├── README.md
+└── package.json             # Root package.json for workspaces
+```
